@@ -381,9 +381,12 @@ section {
     /* modal */
 
     
-  
     .imgProf {
-        margin-left: 45rem;
+        margin-left:62rem;
+        width: 800px;
+    }
+    .imgPer {
+        margin-left: 62rem;
         width: 800px;
     }
 
