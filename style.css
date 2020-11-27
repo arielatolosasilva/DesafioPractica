@@ -1,71 +1,74 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    
 }
-
+/* mobile first */
 /* Header */
-header{
-   padding-bottom: 0;
-   
-
+header {
+    padding-bottom: 0;
 }
-.imgHeader{
-   
-width:100%;
 
+.imgHeader {
+    width: 100%;
+}
 
+.imgHeader2 {
+    display: none;
+}
+
+.imgHeader3 {
+
+    display: none;
 }
 
 /* Section */
-section{
-  
-    display:flex;
+section {
+    display: flex;
     flex-direction: column;
-    align-items:center;
-    background-color:rgb(233, 181, 168); 
-    border-top: 3px  solid rgba(164,199,197);
-    border-bottom: 3px  solid rgba(164,199,197);
-    
+    align-items: center;
+    background-color: rgb(233, 181, 168);
+    border-top: 3px solid rgba(164, 199, 197);
+    border-bottom: 3px solid rgba(164, 199, 197);
 }
-.textImg{
+
+.textImg {
     padding-bottom: 2rem;
 }
 
-.texCont{
- padding: 10%;
-    font-size:25px;
-text-align: center;
-    color:white;
+.texCont {
+    padding: 10%;
+    font-size: 25px;
+    text-align: center;
+    color: white;
 }
-.imgAr{
-    width:10rem;
-   
+
+.imgAr {
+    width: 10rem;
 }
+
 .btnRedondo {
-    width:100px;
-    height:100px;
-    border-radius:160px;
-    border:1px solid rgb(226, 157, 243);
+    width: 100px;
+    height: 100px;
+    border-radius: 160px;
+    border: 1px solid rgb(226, 157, 243);
     margin-bottom: 2rem;
 }
 
 /* Modal */
 
 .modal {
-    display: none; 
-    position: absolute; 
-    z-index: 1; 
-    padding-top: 100px; 
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 100px;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-   
-  }
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 .modal-content {
     background-color: #fefefe;
@@ -73,12 +76,11 @@ text-align: center;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
- border-radius:30px;
- 
-  }
-  
-  .button {
-    background-color: #4CAF50; 
+    border-radius: 30px;
+}
+
+.button {
+    background-color: #4caf50;
     border: none;
     color: white;
     padding: 8px 16px;
@@ -89,45 +91,335 @@ text-align: center;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-  }
-  
-  
-  .btnSalir {
+}
+
+.btnSalir {
     background-color: white;
     color: black;
     border: 2px solid #555555;
-  }
-  
-  .btnSalir:hover {
+}
+
+.btnSalir:hover {
     background-color: #555555;
     color: white;
-  }
-  
-  .texH2{
+}
+
+.texH2 {
     text-align: center;
-  }
-.gatas{
+}
+
+.imgProf {
     width: 100%;
 }
-.imgProf{
-    width:100%;
-   }
-.texH2{
+
+.texH2 {
     font-size: 20px;
-    color:rgba(164,199,197);
+    color: rgba(164, 199, 197);
     margin-bottom: 1rem;
 }
-.texP{
+
+.texP {
     margin-bottom: 1rem;
 }
+
+.listaMusica {
+
+
+    width: 150px;
+    height: 80px;
+}
+
 /* Footer */
-.cfo{
+.fot {
+    height: auto;
+}
+
+.cFo {
     display: flex;
     flex-direction: row;
-justify-content: center;
+    justify-content: center;
+    font-size: 24px;
 }
-.tPfoot{
-    font-size: 12px;
-text-align: center;
-color:black
+
+.tPfoot {
+    font-size: 16px;
+    text-align: center;
+    color: black;
+}
+
+/* media queries */
+
+/* Tablet horizontal*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* header */
+    .imgHeader {
+        display: none;
+    }
+
+    .imgHeader2 {
+        width: 100%;
+        display: block;
+    }
+
+    .imgHeader3 {
+
+        display: none;
+    }
+
+    /* section */
+    .texCont {
+        padding: 10%;
+        font-size: 45px;
+        text-align: center;
+        color: white;
+    }
+
+    .imgAr {
+        width: 20rem;
+    }
+
+    .btnRedondo {
+        width: 150px;
+        height: 150px;
+        border-radius: 160px;
+        border: 1px solid rgb(226, 157, 243);
+        margin-bottom: 2rem;
+    }
+
+    /* modal */
+    .imgProf {
+        margin-left: 6rem;
+        width: 400px;
+    }
+
+    .texH2 {
+        font-size: 30px;
+        color: rgba(164, 199, 197);
+        margin-bottom: 1rem;
+    }
+
+    .texP {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    /* footer */
+    .cFo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 36px;
+    }
+
+    .tPfoot {
+        font-size: 24px;
+        text-align: center;
+        color: black;
+    }
+}
+/* desktop */
+@media (min-width: 1024px) and (max-width: 1443px) {
+    .imgProf {
+        margin-left: 13rem;
+        width: 400px;
+    }
+
+    .imgHeader {
+        display: none;
+    }
+
+    .imgHeader2 {
+        width: 100%;
+        display: block;
+    }
+
+    .imgHeader3 {
+
+        display: none;
+    }
+}
+
+/* Desktop full hd */
+@media(min-width: 1440px) and (max-width: 2559px) {
+
+    /* header */
+    .imgHeader {
+        display: none;
+    }
+
+    .imgHeader2 {
+        width: 100%;
+        display: block;
+    }
+
+    .imgHeader3 {
+
+        display: none;
+    }
+
+    /* section */
+    .texCont {
+        padding: 10%;
+        font-size: 60px;
+        text-align: center;
+        color: white;
+    }
+
+    .texCont {
+        padding: 10%;
+        font-size: 45px;
+        text-align: center;
+        color: white;
+    }
+
+    .imgAr {
+        width: 20rem;
+    }
+
+    .btnRedondo {
+        width: 200px;
+        height: 200px;
+        border-radius: 160px;
+        border: 1px solid rgb(226, 157, 243);
+        margin-bottom: 2rem;
+    }
+
+    /* modal */
+    .imgProf {
+        margin-left: 20rem;
+        width: 500px;
+    }
+
+    .texH2 {
+        font-size: 30px;
+        color: rgba(164, 199, 197);
+        margin-bottom: 1rem;
+    }
+
+    .texP {
+        font-size: 20px;
+        margin-bottom: 1rem;
+    }
+
+    li {
+        font-size: 20px;
+    }
+
+    .listaMusica {
+
+
+        width: 300px;
+        height: 80px;
+    }
+
+    /* Footer */
+    .cFo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 36px;
+    }
+
+    .tPfoot {
+        font-size: 24px;
+        text-align: center;
+        color: black;
+    }
+}
+
+@media(max-width: 2560px) {
+
+    /* header */
+    .imgHeader {
+        display: none;
+    }
+
+    .imgHeader2 {
+        width: 100%;
+        display: none;
+    }
+
+    .imgHeader3 {
+
+        display: block;
+    }
+
+    /* section */
+    .texCont {
+        padding: 10%;
+        font-size: 60px;
+        text-align: center;
+        color: white;
+    }
+
+    .texCont {
+        padding: 10%;
+        font-size: 45px;
+        text-align: center;
+        color: white;
+    }
+
+    .imgAr {
+        width: 40rem;
+    }
+
+    .btnRedondo {
+        width: 300px;
+        height: 300px;
+        border-radius: 160px;
+        border: 1px solid rgb(226, 157, 243);
+        margin-bottom: 2rem;
+    }
+
+    /* modal */
+    .imgProf {
+        margin-left: 23rem;
+        width: 800px;
+    }
+
+    .texH2 {
+        font-size: 60px;
+        color: rgba(164, 199, 197);
+        margin-bottom: 1rem;
+    }
+
+    .texP {
+        font-size: 40px;
+        margin-bottom: 1rem;
+    }
+
+    li {
+        font-size: 30px;
+    }
+
+    .listaMusica {
+
+
+        width: 500px;
+        height: 80px;
+    }
+
+    .btnSalir {
+        width: 100px;
+        font-size: 20px;
+    }
+
+    /* footer */
+    .cFo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 60px;
+    }
+
+    .tPfoot {
+        font-size: 36px;
+        text-align: center;
+        color: black;
+    }
 }

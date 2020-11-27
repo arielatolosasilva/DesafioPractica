@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Conóceme</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,97 +12,108 @@
 </head>
 
 <body>
-   
+
+
     <section id='contenedor'>
         <header>
-            <img class='imgHeader' src="./imagenes/presentacion.png" alt=""> 
-          </header>
+            <img class='imgHeader' src="./imagenes/presentacion.png" alt="">
+            <img class='imgHeader2' src="./imagenes/presentaciondesk.png" alt="">
+            <img class='imgHeader3' src="./imagenes/presentacionmax.png" alt="">
+        </header>
         <div class="textImg">
-        <h1 class='texCont'>Conóceme</h1>
-        <img class='imgAr' src="./imagenes/ary.png" alt="">
-    </div>
-        <div class='botones'>
-            <img onclick="openModal('modalProfesional','salir')" id='btnProf' src='./imagenes/prof.png' class='btnRedondo' />
-            <img  onclick="openModal('modalPersonal','salir2')" id='btnPers' src='./imagenes/perso.png' class='btnRedondo' />
-    
+            <h1 class='texCont'>Conóceme</h1>
+            <img class='imgAr' src="./imagenes/ary.png" alt="">
         </div>
-  
+        <div class='botones'>
+            <img onclick="openModal('modalProfesional','salir')" id='btnProf' src='./imagenes/prof.png'
+                class='btnRedondo' />
+            <img onclick="openModal('modalPersonal','salir2')" id='btnPers' src='./imagenes/perso.png'
+                class='btnRedondo' />
+
+        </div>
+
     </section>
-<!-- modal profesional  -->
-<div id="modalProfesional" class="modal">
+    <!-- modal profesional  -->
+    <div id="modalProfesional" class="modal">
 
-    <div class="modal-content ">
-     
-         <h2 class="texH2">Principales caracteristicas profesionales</h2>
-        <p class="texP" >Espero ser parte de su equipo y les comento mis virtudes profesionales:</p>
-      <ul class="fa-ul">
-        <li><i class="fa-li fa fa-check-square"></i>Comprometida con cada labor o desafío que se me presenta</li>
-        <li><i class="fa-li fa fa-check-square"></i>Capacidad y muchas ganas de aprender</li>
-        <li><i class="fa-li fa fa-check-square"></i>Me encanta trabajar en equipo e intercambiar todo tipo de idea</li>
-        <li><i class="fa-li fa fa-check-square"></i>Perseverante y metódica en la realización de cualquier objetivo o meta</li>
-      </ul> 
-      <div>
-        <img class='imgProf'src="./imagenes/digital.jpg" alt="">
-      </div>
-      
-      <button class="button btnSalir" id="salir">Salir</button>
-    </div>
-    
-  </div>
-  
- <!-- modal personal -->
-<div id="modalPersonal" class="modal">
+        <div class="modal-content ">
+            <div>
+                <h2 class="texH2">Principales caracteristicas profesionales</h2>
+                <p class="texP">Espero ser parte de su equipo y les comento mis virtudes profesionales:</p>
+            </div>
+            <ul class="fa-ul">
+                <li><i class="fa-li fa fa-check-square"></i>Comprometida con cada labor o desafío que se me presenta.
+                </li>
+                <li><i class="fa-li fa fa-check-square"></i>Capacidad y muchas ganas de aprender</li>
+                <li><i class="fa-li fa fa-check-square"></i>Me encanta trabajar en equipo e intercambiar todo tipo de
+                    idea</li>
+                <li><i class="fa-li fa fa-check-square"></i>Perseverante y metódica en la realización de cualquier
+                    objetivo o meta.</li>
+            </ul>
+            <div>
+                <img class='imgProf' src="./imagenes/digital.jpg" alt="">
+            </div>
 
-    <div class="modal-content">
-        <div >
-      <h2>Principales caracteristicas Personales</h2>
-      <p>Aquí mi aspecto más personal</p>
-    </div>
-    <div>
-        <ul class="fa-ul">
-              <li><i class="fa-li fa fa-check-square"></i>Soy una feliz mamá, amo la vida familar y lucho cada día para dar un mejor bienestar a los míos</li>
-              <li><i class="fa-li fa fa-check-square"></i>Me gusta la tecnología y me apasiona seguir aprendiendo y trato de seguir el paso a los constantes cambios que tiene este rubro.</li>
-              <li><i class="fa-li fa fa-check-square"></i>Me ecantan los animales, tengo dos gatitas</li>
-              <li><i class="fa-li fa fa-check-square"></i>Necesito tener un cambio en mi vida laboral, para sentirme realizada personal y profesionalmente</li>
-        </ul>    
-    </div>
-       <button class="button btnSalir" id="salir2">Salir</button>
-    </div>
-  
-  </div>
+            <button class="button btnSalir" id="salir">Salir</button>
+        </div>
 
-    <footer  >
-        <div class='cfo'>
-           <a href="https://github.com/arielatolosasilva" style="font-size:36px"><i class="fa fa-github"></i></button>
-            <a href="https://www.linkedin.com/in/ariela-tolosa/" style="font-size:36px"><i class="fa fa-linkedin-square"></i></button>
+    </div>
+
+    <!-- modal personal -->
+    <div id="modalPersonal" class="modal">
+
+        <div class="modal-content">
+            <div>
+                <h2 class="texH2">Principales caracteristicas Personales</h2>
+                <p class="texP">Aquí mi aspecto más personal</p>
             </div>
             <div>
-                <p class="tPfoot">Celular : 91522257</p>
-                <p class="tPfoot">Mail: ariela.tolosa.silva@gmail.com</p>
-
+                <ul class="fa-ul">
+                    <li><i class="fa-li fa fa-check-square"></i>Soy una feliz mamá, amo la vida familar y lucho cada día
+                        para dar un mejor bienestar a los míos.</li>
+                    <li><i class="fa-li fa fa-check-square"></i>Me gusta la tecnología y me apasiona seguir aprendiendo
+                        y trato de seguir el paso a los constantes cambios que tiene este rubro.</li>
+                    <li><i class="fa-li fa fa-check-square"></i>Me ecantan los animales, tengo dos gatitas</li>
+                    <li><i class="fa-li fa fa-check-square"></i>Me gusta escuchar muscica y aca de muestra un botón.
+                    </li>
+                    <iframe src="https://open.spotify.com/embed/playlist/3f2UnjsNCIal4gOIAgT0g2" class="listaMusica"
+                        frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </ul>
+                <div>
+                    <img class='imgProf' src="./imagenes/familia.jpg" alt="">
+                </div>
             </div>
+            <button class="button btnSalir" id="salir2">Salir</button>
+        </div>
+
+    </div>
+
+    <footer class="fot">
+        <div class='cFo'>
+            <a href="https://github.com/arielatolosasilva"><i class="fa fa-github"></i></button>
+                <a href="https://www.linkedin.com/in/ariela-tolosa/"><i class="fa fa-linkedin-square"></i></button>
+        </div>
+        <div>
+            <p class="tPfoot">Celular : 91522257</p>
+            <p class="tPfoot">Mail: ariela.tolosa.silva@gmail.com</p>
+
+        </div>
     </footer>
 
     <script>
+        const openModal = (idmodal, close) => {
+
+            let modal = document.getElementById(idmodal);
+            let span = document.getElementById(close);
+            modal.style.display = "block";
+
+            span.onclick = () => {
+                modal.style.display = "none";
+            }
 
 
-
-        function openModal(idmodal,close){
-        
-          var modal = document.getElementById(idmodal);
-         // var btn = document.getElementById(idBtn);
-          var span = document.getElementById(close);
-          modal.style.display = "block";
-         
-          span.onclick = function() {
-            modal.style.display = "none";
-          }
-        
-        
         }
-        
-        
-        
-        </script>
+    </script>
 </body>
+
 </html>
